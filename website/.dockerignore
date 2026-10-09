@@ -1,0 +1,6 @@
+.env
+data
+qa
+tests
+.git
+__pycache__

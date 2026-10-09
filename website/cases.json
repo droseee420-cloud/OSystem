@@ -1,0 +1,303 @@
+[
+  {
+    "slug": "myagkaya-krovlya",
+    "title": "Обогрев мягкой кровли",
+    "category": "roof",
+    "photos": [
+      {
+        "src": "/assets/myagkaya-krovlya-2.webp",
+        "small": "/assets/myagkaya-krovlya-2-640.webp",
+        "width": 964,
+        "height": 1280,
+        "original": "кейсы/Обогрев мягкой кровли/2.jpg"
+      },
+      {
+        "src": "/assets/myagkaya-krovlya-3.webp",
+        "small": "/assets/myagkaya-krovlya-3-640.webp",
+        "width": 964,
+        "height": 1280,
+        "original": "кейсы/Обогрев мягкой кровли/3.jpg"
+      },
+      {
+        "src": "/assets/myagkaya-krovlya-6.webp",
+        "small": "/assets/myagkaya-krovlya-6-640.webp",
+        "width": 964,
+        "height": 1280,
+        "original": "кейсы/Обогрев мягкой кровли/6.jpg"
+      },
+      {
+        "src": "/assets/myagkaya-krovlya-7.webp",
+        "small": "/assets/myagkaya-krovlya-7-640.webp",
+        "width": 964,
+        "height": 1280,
+        "original": "кейсы/Обогрев мягкой кровли/7.jpg"
+      }
+    ]
+  },
+  {
+    "slug": "vnutrenniy-zhelob",
+    "title": "Обогрев внутреннего желоба",
+    "category": "roof",
+    "photos": [
+      {
+        "src": "/assets/vnutrenniy-zhelob-1.webp",
+        "small": "/assets/vnutrenniy-zhelob-1-640.webp",
+        "width": 964,
+        "height": 1280,
+        "original": "кейсы/Обогрев внутреннего желоба/1.jpg"
+      },
+      {
+        "src": "/assets/vnutrenniy-zhelob-6.webp",
+        "small": "/assets/vnutrenniy-zhelob-6-640.webp",
+        "width": 964,
+        "height": 1280,
+        "original": "кейсы/Обогрев внутреннего желоба/6.jpg"
+      },
+      {
+        "src": "/assets/vnutrenniy-zhelob-3.webp",
+        "small": "/assets/vnutrenniy-zhelob-3-640.webp",
+        "width": 964,
+        "height": 1280,
+        "original": "кейсы/Обогрев внутреннего желоба/3.jpg"
+      },
+      {
+        "src": "/assets/vnutrenniy-zhelob-8.webp",
+        "small": "/assets/vnutrenniy-zhelob-8-640.webp",
+        "width": 964,
+        "height": 1280,
+        "original": "кейсы/Обогрев внутреннего желоба/8.jpg"
+      }
+    ]
+  },
+  {
+    "slug": "voronki",
+    "title": "Обогрев внутренних воронок",
+    "category": "roof",
+    "photos": [
+      {
+        "src": "/assets/voronki-9.webp",
+        "small": "/assets/voronki-9-640.webp",
+        "width": 1280,
+        "height": 964,
+        "original": "кейсы/Обогрев внутренних воронок/9.jpg"
+      },
+      {
+        "src": "/assets/voronki-7.webp",
+        "small": "/assets/voronki-7-640.webp",
+        "width": 1280,
+        "height": 964,
+        "original": "кейсы/Обогрев внутренних воронок/7.jpg"
+      },
+      {
+        "src": "/assets/voronki-4.webp",
+        "small": "/assets/voronki-4-640.webp",
+        "width": 957,
+        "height": 1280,
+        "original": "кейсы/Обогрев внутренних воронок/4.jpg"
+      },
+      {
+        "src": "/assets/voronki-5.webp",
+        "small": "/assets/voronki-5-640.webp",
+        "width": 1280,
+        "height": 964,
+        "original": "кейсы/Обогрев внутренних воронок/5.jpg"
+      }
+    ]
+  },
+  {
+    "slug": "mansardnye-okna",
+    "title": "Обогрев водосточной системы и мансардных окон",
+    "category": "roof",
+    "photos": [
+      {
+        "src": "/assets/mansardnye-okna-4.webp",
+        "small": "/assets/mansardnye-okna-4-640.webp",
+        "width": 1280,
+        "height": 964,
+        "original": "кейсы/Обогрев водосточной системы и мансардных окон/4.jpg"
+      },
+      {
+        "src": "/assets/mansardnye-okna-2.webp",
+        "small": "/assets/mansardnye-okna-2-640.webp",
+        "width": 964,
+        "height": 1280,
+        "original": "кейсы/Обогрев водосточной системы и мансардных окон/2.jpg"
+      },
+      {
+        "src": "/assets/mansardnye-okna-6.webp",
+        "small": "/assets/mansardnye-okna-6-640.webp",
+        "width": 1280,
+        "height": 964,
+        "original": "кейсы/Обогрев водосточной системы и мансардных окон/6.jpg"
+      },
+      {
+        "src": "/assets/mansardnye-okna-3.webp",
+        "small": "/assets/mansardnye-okna-3-640.webp",
+        "width": 1280,
+        "height": 964,
+        "original": "кейсы/Обогрев водосточной системы и мансардных окон/3.jpg"
+      }
+    ]
+  },
+  {
+    "slug": "vhodnaya-gruppa",
+    "title": "Обогрев входной группы",
+    "category": "entrance",
+    "photos": [
+      {
+        "src": "/assets/vhodnaya-gruppa-2.webp",
+        "small": "/assets/vhodnaya-gruppa-2-640.webp",
+        "width": 960,
+        "height": 1280,
+        "original": "кейсы/Обогрев входной группы/2.jpg"
+      },
+      {
+        "src": "/assets/vhodnaya-gruppa-1.webp",
+        "small": "/assets/vhodnaya-gruppa-1-640.webp",
+        "width": 960,
+        "height": 1280,
+        "original": "кейсы/Обогрев входной группы/1.jpg"
+      },
+      {
+        "src": "/assets/vhodnaya-gruppa-5.webp",
+        "small": "/assets/vhodnaya-gruppa-5-640.webp",
+        "width": 960,
+        "height": 1280,
+        "original": "кейсы/Обогрев входной группы/5.jpg"
+      },
+      {
+        "src": "/assets/vhodnaya-gruppa-3.webp",
+        "small": "/assets/vhodnaya-gruppa-3-640.webp",
+        "width": 960,
+        "height": 1280,
+        "original": "кейсы/Обогрев входной группы/3.jpg"
+      }
+    ]
+  },
+  {
+    "slug": "kray-krovli",
+    "title": "Обогрев края кровли",
+    "category": "roof",
+    "photos": [
+      {
+        "src": "/assets/kray-krovli-16.webp",
+        "small": "/assets/kray-krovli-16-640.webp",
+        "width": 964,
+        "height": 1280,
+        "original": "кейсы/Обогрев края кровли/16.jpg"
+      },
+      {
+        "src": "/assets/kray-krovli-12.webp",
+        "small": "/assets/kray-krovli-12-640.webp",
+        "width": 964,
+        "height": 1280,
+        "original": "кейсы/Обогрев края кровли/12.jpg"
+      },
+      {
+        "src": "/assets/kray-krovli-15.webp",
+        "small": "/assets/kray-krovli-15-640.webp",
+        "width": 964,
+        "height": 1280,
+        "original": "кейсы/Обогрев края кровли/15.jpg"
+      },
+      {
+        "src": "/assets/kray-krovli-18.webp",
+        "small": "/assets/kray-krovli-18-640.webp",
+        "width": 964,
+        "height": 1280,
+        "original": "кейсы/Обогрев края кровли/18.jpg"
+      }
+    ]
+  },
+  {
+    "slug": "krovlya-i-okna",
+    "title": "Обогрев края кровли и пожарных окон",
+    "category": "roof",
+    "photos": [
+      {
+        "src": "/assets/krovlya-i-okna-12.webp",
+        "small": "/assets/krovlya-i-okna-12-640.webp",
+        "width": 1280,
+        "height": 964,
+        "original": "кейсы/Обогрев края кровли и пожарных окон/12.jpg"
+      },
+      {
+        "src": "/assets/krovlya-i-okna-9.webp",
+        "small": "/assets/krovlya-i-okna-9-640.webp",
+        "width": 964,
+        "height": 1280,
+        "original": "кейсы/Обогрев края кровли и пожарных окон/9.jpg"
+      },
+      {
+        "src": "/assets/krovlya-i-okna-3.webp",
+        "small": "/assets/krovlya-i-okna-3-640.webp",
+        "width": 964,
+        "height": 1280,
+        "original": "кейсы/Обогрев края кровли и пожарных окон/3.jpg"
+      },
+      {
+        "src": "/assets/krovlya-i-okna-5.webp",
+        "small": "/assets/krovlya-i-okna-5-640.webp",
+        "width": 964,
+        "height": 1280,
+        "original": "кейсы/Обогрев края кровли и пожарных окон/5.jpg"
+      }
+    ]
+  },
+  {
+    "slug": "teplyy-pol",
+    "title": "Монтаж теплого пола на матах",
+    "category": "floor",
+    "photos": [
+      {
+        "src": "/assets/teplyy-pol-2.webp",
+        "small": "/assets/teplyy-pol-2-640.webp",
+        "width": 1280,
+        "height": 960,
+        "original": "кейсы/Монтаж теплого пола на матах/2.jpg"
+      },
+      {
+        "src": "/assets/teplyy-pol-1.webp",
+        "small": "/assets/teplyy-pol-1-640.webp",
+        "width": 960,
+        "height": 1280,
+        "original": "кейсы/Монтаж теплого пола на матах/1.jpg"
+      }
+    ]
+  },
+  {
+    "slug": "shkafy-upravleniya",
+    "title": "Шкафы управления электрообогревом",
+    "category": "control",
+    "photos": [
+      {
+        "src": "/assets/shkafy-upravleniya-6.webp",
+        "small": "/assets/shkafy-upravleniya-6-640.webp",
+        "width": 964,
+        "height": 1280,
+        "original": "кейсы/Шкафы управления электрообогревом/6.jpg"
+      },
+      {
+        "src": "/assets/shkafy-upravleniya-7.webp",
+        "small": "/assets/shkafy-upravleniya-7-640.webp",
+        "width": 964,
+        "height": 1280,
+        "original": "кейсы/Шкафы управления электрообогревом/7.jpg"
+      },
+      {
+        "src": "/assets/shkafy-upravleniya-5.webp",
+        "small": "/assets/shkafy-upravleniya-5-640.webp",
+        "width": 964,
+        "height": 1280,
+        "original": "кейсы/Шкафы управления электрообогревом/5.jpg"
+      },
+      {
+        "src": "/assets/shkafy-upravleniya-2.webp",
+        "small": "/assets/shkafy-upravleniya-2-640.webp",
+        "width": 964,
+        "height": 1280,
+        "original": "кейсы/Шкафы управления электрообогревом/2.jpg"
+      }
+    ]
+  }
+]

@@ -1,0 +1,14 @@
+const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path');
+const {chromium}=require(process.env.PLAYWRIGHT_PATH||'playwright');
+(async()=>{const browser=await chromium.launch({headless:true,channel:'msedge'});const p=await browser.newPage();
+ await p.addInitScript(()=>{window.qaGoals=[];window.ym=(id,method,arg)=>{if(method==='reachGoal')window.qaGoals.push(arg);if(method==='getClientID')arg('test-client-id')}});
+ await p.route('**/api/config',async r=>{const original=await r.fetch();const c=await original.json();await r.fulfill({response:original,json:{...c,metrika:'123456'}})});
+ await p.route('https://mc.yandex.ru/**',r=>r.abort());
+ await p.goto('http://127.0.0.1:8766/?utm_source=yandex&utm_campaign=integration-check&yclid=999999');await p.locator('[data-cookie=yes]').click();
+ let sent;await p.route('**/api/leads',async r=>{sent=r.request().postDataJSON();await r.fulfill({status:200,json:{ok:true,preview:false,id:sent.id}})});
+ await p.locator('#contact').fill('test@example.com');await p.locator('[name=consent]').check();await p.locator('button[type=submit]').click();await p.waitForFunction(()=>document.querySelector('.form-status').textContent.includes('передана менеджеру'));
+ assert.equal(sent.attribution.yclid,'999999');assert.equal(sent.attribution.client_id,'test-client-id');assert.equal(sent.attribution.utm_campaign,'integration-check');assert.deepEqual(await p.evaluate(()=>window.qaGoals),['form_start','lead_sent']);
+ await p.goto('http://127.0.0.1:8766/spasibo/');assert.deepEqual(await p.evaluate(()=>window.qaGoals),[]);
+ await p.goto('http://127.0.0.1:8766/');await p.route('**/api/leads',r=>r.fulfill({status:502,json:{error:'Тестовый сбой почты'}}));await p.locator('#contact').fill('test@example.com');await p.locator('[name=consent]').check();await p.locator('button[type=submit]').click();await p.waitForFunction(()=>document.querySelector('.form-status').textContent.includes('Тестовый сбой'));assert(!(await p.evaluate(()=>window.qaGoals)).includes('lead_sent'));
+ await p.setViewportSize({width:390,height:844});await p.goto('http://127.0.0.1:8766/proekty/');const text=await p.locator('h1').innerText();assert(text.includes('работы. Внимание'));
+ const result={passed:true,checks:['attribution','client_id','lead goal only after confirmed success','no goal on direct thank-you visit','no lead goal on mail failure','mobile heading spacing'],externalEmailSent:false,realMetrikaContacted:false};fs.writeFileSync(path.join(__dirname,'../qa/analytics-report.json'),JSON.stringify(result,null,2));console.log(JSON.stringify(result));await browser.close();})();

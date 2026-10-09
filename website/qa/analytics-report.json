@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "checks": [
+    "attribution",
+    "client_id",
+    "lead goal only after confirmed success",
+    "no goal on direct thank-you visit",
+    "no lead goal on mail failure",
+    "mobile heading spacing"
+  ],
+  "externalEmailSent": false,
+  "realMetrikaContacted": false
+}

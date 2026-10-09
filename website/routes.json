@@ -1,0 +1,134 @@
+[
+  {
+    "path": "/",
+    "title": "Обогрев кровли и водостоков в Твери"
+  },
+  {
+    "path": "/resheniya/",
+    "title": "Решения для кабельного обогрева"
+  },
+  {
+    "path": "/resheniya/krovlya/",
+    "title": "Обогрев кровли и водостоков"
+  },
+  {
+    "path": "/resheniya/vhodnye-gruppy/",
+    "title": "Обогрев ступеней крыльца и пандусов"
+  },
+  {
+    "path": "/resheniya/teplye-poly/",
+    "title": "Подбор и монтаж электрического тёплого пола"
+  },
+  {
+    "path": "/resheniya/truby/",
+    "title": "Кабельный обогрев труб и трубопроводов"
+  },
+  {
+    "path": "/resheniya/ploshchadki/",
+    "title": "Обогрев открытых площадок и дорожек"
+  },
+  {
+    "path": "/uslugi/",
+    "title": "Услуги по системам обогрева"
+  },
+  {
+    "path": "/uslugi/proektirovanie/",
+    "title": "Проектирование систем кабельного обогрева"
+  },
+  {
+    "path": "/uslugi/postavka/",
+    "title": "Подбор и поставка оборудования для систем обогрева"
+  },
+  {
+    "path": "/uslugi/montazh/",
+    "title": "Монтаж систем электрического обогрева"
+  },
+  {
+    "path": "/uslugi/diagnostika/",
+    "title": "Диагностика систем обогрева"
+  },
+  {
+    "path": "/uslugi/obsluzhivanie/",
+    "title": "Сервисное обслуживание систем обогрева"
+  },
+  {
+    "path": "/proekty/",
+    "title": "Примеры наших работ"
+  },
+  {
+    "path": "/proekty/myagkaya-krovlya/",
+    "title": "Обогрев мягкой кровли"
+  },
+  {
+    "path": "/proekty/vnutrenniy-zhelob/",
+    "title": "Обогрев внутреннего желоба"
+  },
+  {
+    "path": "/proekty/voronki/",
+    "title": "Обогрев внутренних воронок"
+  },
+  {
+    "path": "/proekty/mansardnye-okna/",
+    "title": "Обогрев водосточной системы и мансардных окон"
+  },
+  {
+    "path": "/proekty/vhodnaya-gruppa/",
+    "title": "Обогрев входной группы"
+  },
+  {
+    "path": "/proekty/kray-krovli/",
+    "title": "Обогрев края кровли"
+  },
+  {
+    "path": "/proekty/krovlya-i-okna/",
+    "title": "Обогрев края кровли и пожарных окон"
+  },
+  {
+    "path": "/proekty/teplyy-pol/",
+    "title": "Монтаж теплого пола на матах"
+  },
+  {
+    "path": "/proekty/shkafy-upravleniya/",
+    "title": "Шкафы управления электрообогревом"
+  },
+  {
+    "path": "/klientam/organizaciyam/",
+    "title": "Организациям"
+  },
+  {
+    "path": "/klientam/tendery/",
+    "title": "Тендеры и контракты"
+  },
+  {
+    "path": "/klientam/chastnym/",
+    "title": "Частным клиентам"
+  },
+  {
+    "path": "/o-kompanii/",
+    "title": "О компании"
+  },
+  {
+    "path": "/kontakty/",
+    "title": "Контакты"
+  },
+  {
+    "path": "/garantiya/",
+    "title": "Гарантия и обращения по системе"
+  },
+  {
+    "path": "/privacy/",
+    "title": "Политика обработки персональных данных"
+  },
+  {
+    "path": "/consent/",
+    "title": "Согласие на обработку персональных данных"
+  },
+  {
+    "path": "/spasibo/",
+    "title": "Обращение принято"
+  },
+  {
+    "path": "/404/",
+    "title": "Страница не найдена"
+  }
+]

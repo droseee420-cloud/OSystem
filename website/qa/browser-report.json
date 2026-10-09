@@ -1,0 +1,602 @@
+{
+  "issues": [],
+  "results": [
+    {
+      "viewport": "desktop",
+      "path": "/",
+      "status": 200,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "markers": false
+    },
+    {
+      "viewport": "desktop",
+      "path": "/resheniya/",
+      "status": 200,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "markers": false
+    },
+    {
+      "viewport": "desktop",
+      "path": "/resheniya/krovlya/",
+      "status": 200,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "markers": false
+    },
+    {
+      "viewport": "desktop",
+      "path": "/resheniya/vhodnye-gruppy/",
+      "status": 200,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "markers": false
+    },
+    {
+      "viewport": "desktop",
+      "path": "/resheniya/teplye-poly/",
+      "status": 200,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "markers": false
+    },
+    {
+      "viewport": "desktop",
+      "path": "/resheniya/truby/",
+      "status": 200,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "markers": false
+    },
+    {
+      "viewport": "desktop",
+      "path": "/resheniya/ploshchadki/",
+      "status": 200,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "markers": false
+    },
+    {
+      "viewport": "desktop",
+      "path": "/uslugi/",
+      "status": 200,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "markers": false
+    },
+    {
+      "viewport": "desktop",
+      "path": "/uslugi/proektirovanie/",
+      "status": 200,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "markers": false
+    },
+    {
+      "viewport": "desktop",
+      "path": "/uslugi/postavka/",
+      "status": 200,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "markers": false
+    },
+    {
+      "viewport": "desktop",
+      "path": "/uslugi/montazh/",
+      "status": 200,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "markers": false
+    },
+    {
+      "viewport": "desktop",
+      "path": "/uslugi/diagnostika/",
+      "status": 200,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "markers": false
+    },
+    {
+      "viewport": "desktop",
+      "path": "/uslugi/obsluzhivanie/",
+      "status": 200,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "markers": false
+    },
+    {
+      "viewport": "desktop",
+      "path": "/proekty/",
+      "status": 200,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "markers": false
+    },
+    {
+      "viewport": "desktop",
+      "path": "/proekty/myagkaya-krovlya/",
+      "status": 200,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "markers": false
+    },
+    {
+      "viewport": "desktop",
+      "path": "/proekty/vnutrenniy-zhelob/",
+      "status": 200,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "markers": false
+    },
+    {
+      "viewport": "desktop",
+      "path": "/proekty/voronki/",
+      "status": 200,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "markers": false
+    },
+    {
+      "viewport": "desktop",
+      "path": "/proekty/mansardnye-okna/",
+      "status": 200,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "markers": false
+    },
+    {
+      "viewport": "desktop",
+      "path": "/proekty/vhodnaya-gruppa/",
+      "status": 200,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "markers": false
+    },
+    {
+      "viewport": "desktop",
+      "path": "/proekty/kray-krovli/",
+      "status": 200,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "markers": false
+    },
+    {
+      "viewport": "desktop",
+      "path": "/proekty/krovlya-i-okna/",
+      "status": 200,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "markers": false
+    },
+    {
+      "viewport": "desktop",
+      "path": "/proekty/teplyy-pol/",
+      "status": 200,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "markers": false
+    },
+    {
+      "viewport": "desktop",
+      "path": "/proekty/shkafy-upravleniya/",
+      "status": 200,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "markers": false
+    },
+    {
+      "viewport": "desktop",
+      "path": "/klientam/organizaciyam/",
+      "status": 200,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "markers": false
+    },
+    {
+      "viewport": "desktop",
+      "path": "/klientam/tendery/",
+      "status": 200,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "markers": false
+    },
+    {
+      "viewport": "desktop",
+      "path": "/klientam/chastnym/",
+      "status": 200,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "markers": false
+    },
+    {
+      "viewport": "desktop",
+      "path": "/o-kompanii/",
+      "status": 200,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "markers": false
+    },
+    {
+      "viewport": "desktop",
+      "path": "/kontakty/",
+      "status": 200,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "markers": false
+    },
+    {
+      "viewport": "desktop",
+      "path": "/garantiya/",
+      "status": 200,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "markers": false
+    },
+    {
+      "viewport": "desktop",
+      "path": "/privacy/",
+      "status": 200,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "markers": false
+    },
+    {
+      "viewport": "desktop",
+      "path": "/consent/",
+      "status": 200,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "markers": false
+    },
+    {
+      "viewport": "desktop",
+      "path": "/spasibo/",
+      "status": 200,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "markers": false
+    },
+    {
+      "viewport": "desktop",
+      "path": "/404/",
+      "status": 200,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "markers": false
+    },
+    {
+      "viewport": "mobile",
+      "path": "/",
+      "status": 200,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "markers": false
+    },
+    {
+      "viewport": "mobile",
+      "path": "/resheniya/",
+      "status": 200,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "markers": false
+    },
+    {
+      "viewport": "mobile",
+      "path": "/resheniya/krovlya/",
+      "status": 200,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "markers": false
+    },
+    {
+      "viewport": "mobile",
+      "path": "/resheniya/vhodnye-gruppy/",
+      "status": 200,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "markers": false
+    },
+    {
+      "viewport": "mobile",
+      "path": "/resheniya/teplye-poly/",
+      "status": 200,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "markers": false
+    },
+    {
+      "viewport": "mobile",
+      "path": "/resheniya/truby/",
+      "status": 200,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "markers": false
+    },
+    {
+      "viewport": "mobile",
+      "path": "/resheniya/ploshchadki/",
+      "status": 200,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "markers": false
+    },
+    {
+      "viewport": "mobile",
+      "path": "/uslugi/",
+      "status": 200,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "markers": false
+    },
+    {
+      "viewport": "mobile",
+      "path": "/uslugi/proektirovanie/",
+      "status": 200,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "markers": false
+    },
+    {
+      "viewport": "mobile",
+      "path": "/uslugi/postavka/",
+      "status": 200,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "markers": false
+    },
+    {
+      "viewport": "mobile",
+      "path": "/uslugi/montazh/",
+      "status": 200,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "markers": false
+    },
+    {
+      "viewport": "mobile",
+      "path": "/uslugi/diagnostika/",
+      "status": 200,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "markers": false
+    },
+    {
+      "viewport": "mobile",
+      "path": "/uslugi/obsluzhivanie/",
+      "status": 200,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "markers": false
+    },
+    {
+      "viewport": "mobile",
+      "path": "/proekty/",
+      "status": 200,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "markers": false
+    },
+    {
+      "viewport": "mobile",
+      "path": "/proekty/myagkaya-krovlya/",
+      "status": 200,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "markers": false
+    },
+    {
+      "viewport": "mobile",
+      "path": "/proekty/vnutrenniy-zhelob/",
+      "status": 200,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "markers": false
+    },
+    {
+      "viewport": "mobile",
+      "path": "/proekty/voronki/",
+      "status": 200,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "markers": false
+    },
+    {
+      "viewport": "mobile",
+      "path": "/proekty/mansardnye-okna/",
+      "status": 200,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "markers": false
+    },
+    {
+      "viewport": "mobile",
+      "path": "/proekty/vhodnaya-gruppa/",
+      "status": 200,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "markers": false
+    },
+    {
+      "viewport": "mobile",
+      "path": "/proekty/kray-krovli/",
+      "status": 200,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "markers": false
+    },
+    {
+      "viewport": "mobile",
+      "path": "/proekty/krovlya-i-okna/",
+      "status": 200,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "markers": false
+    },
+    {
+      "viewport": "mobile",
+      "path": "/proekty/teplyy-pol/",
+      "status": 200,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "markers": false
+    },
+    {
+      "viewport": "mobile",
+      "path": "/proekty/shkafy-upravleniya/",
+      "status": 200,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "markers": false
+    },
+    {
+      "viewport": "mobile",
+      "path": "/klientam/organizaciyam/",
+      "status": 200,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "markers": false
+    },
+    {
+      "viewport": "mobile",
+      "path": "/klientam/tendery/",
+      "status": 200,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "markers": false
+    },
+    {
+      "viewport": "mobile",
+      "path": "/klientam/chastnym/",
+      "status": 200,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "markers": false
+    },
+    {
+      "viewport": "mobile",
+      "path": "/o-kompanii/",
+      "status": 200,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "markers": false
+    },
+    {
+      "viewport": "mobile",
+      "path": "/kontakty/",
+      "status": 200,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "markers": false
+    },
+    {
+      "viewport": "mobile",
+      "path": "/garantiya/",
+      "status": 200,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "markers": false
+    },
+    {
+      "viewport": "mobile",
+      "path": "/privacy/",
+      "status": 200,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "markers": false
+    },
+    {
+      "viewport": "mobile",
+      "path": "/consent/",
+      "status": 200,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "markers": false
+    },
+    {
+      "viewport": "mobile",
+      "path": "/spasibo/",
+      "status": 200,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "markers": false
+    },
+    {
+      "viewport": "mobile",
+      "path": "/404/",
+      "status": 200,
+      "overflow": false,
+      "h1": 1,
+      "broken": [],
+      "markers": false
+    }
+  ],
+  "formStatus": "Локальная проверка: заявка сохранена в тестовом почтовом ящике на компьютере. Письмо на Яндекс не отправлялось.",
+  "links": 36,
+  "assets": 71
+}

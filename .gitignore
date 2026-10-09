@@ -1,0 +1,6 @@
+# Publish only the deliverable, not the working documents and original photos.
+/*
+!/.gitignore
+!/README.md
+!/Запустить сайт.cmd
+!/website/
