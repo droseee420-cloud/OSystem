@@ -11,6 +11,7 @@ parser=argparse.ArgumentParser()
 parser.add_argument('--output',type=Path,required=True)
 parser.add_argument('--origin',default='https://obogrevsistem.ru')
 parser.add_argument('--https',action='store_true')
+parser.add_argument('--metrika-id',type=int,help='Public Yandex Metrika counter; loaded after visitor consent')
 args=parser.parse_args();out=args.output.resolve();origin=args.origin.rstrip('/')
 if not origin.startswith('https://'):raise SystemExit('Canonical origin must use HTTPS')
 out.mkdir(parents=True,exist_ok=True)
@@ -29,15 +30,21 @@ for src in (ROOT/'public').rglob('*'):
  text=text.replace('Приложите к заявке — так разговор будет предметнее.','Пришлите на почту — так разговор будет предметнее.')
  text=text.replace('Позвоните, напишите на почту или оставьте заявку.','Позвоните или напишите на почту.')
  text=re.sub(r'<a href="/(?:privacy|consent)/"[^>]*>.*?</a>','',text)
- text=re.sub(r'<button class="link-button" data-cookie-settings hidden>.*?</button>','',text)
- text=re.sub(r'<div class="cookie-panel" hidden>.*?</div></div>','',text,flags=re.S)
+ if args.metrika_id:
+  text=text.replace('Аналитика помогает понять, какие разделы полезны. Разрешить Яндекс Метрику? ', 'Разрешить Яндекс Метрику и Вебвизор? Они используют cookie, собирают статистику посещений и записывают действия на страницах, чтобы улучшать сайт и рекламу. Выбор можно изменить в подвале сайта. ')
+  text=text.replace('/assets/site.js"','/assets/site.js?v=metrika-113826221-1"')
+ else:
+  text=re.sub(r'<button class="link-button" data-cookie-settings hidden>.*?</button>','',text)
+  text=re.sub(r'<div class="cookie-panel" hidden>.*?</div></div>','',text,flags=re.S)
  assert '@@' not in text and '<form' not in text and 'type="file"' not in text
  dest.write_text(text,encoding='utf-8',newline='\n')
 with (out/'assets/site.css').open('a',encoding='utf-8') as f:
  f.write('\n.direct-request{align-self:center}.direct-request h3{font-size:28px}.direct-request .button{width:100%;margin:0 0 14px}.direct-request .fine{margin-top:24px}.direct-request .form-direct a{overflow-wrap:anywhere;white-space:normal}\n')
-# No browser analytics, identifiers or local attribution storage in this deployment.
+# Static configuration replaces the Python API; local previews never send analytics.
 js=(out/'assets/site.js').read_text(encoding='utf-8')
-js=re.sub(r'const ready=fetch\(.*?\.catch\(\(\)=>null\);','const ready=Promise.resolve({preview:false,metrika:null});',js,count=1)
+counter=str(args.metrika_id) if args.metrika_id else 'null'
+static_config="const ready=Promise.resolve({preview:false,metrika:['obogrevsistem.ru','www.obogrevsistem.ru'].includes(location.hostname)?"+counter+":null,webvisor:true}).then(c=>{config=c;setupAnalytics(c);return c});"
+js=re.sub(r'const ready=fetch\(.*?\.catch\(\(\)=>null\);',lambda _:static_config,js,count=1)
 start=js.index("const tags=['utm_source'");end=js.index('function goal(name)',start)
 js=js[:start]+'let attribution={};\n'+js[end:]
 (out/'assets/site.js').write_text(js,encoding='utf-8',newline='\n')
@@ -59,5 +66,11 @@ Header always set Referrer-Policy "strict-origin-when-cross-origin"
 Header always set Content-Security-Policy "default-src 'self'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'self' data:; connect-src 'self'; base-uri 'self'; frame-ancestors 'none'; form-action 'none'"
 </IfModule>
 '''
+if args.metrika_id:
+ # Limit external resources to the exact Metrika host supplied by the owner.
+ # Keep X-Frame-Options and frame-ancestors protection unchanged.
+ ht=ht.replace("script-src 'self';", "script-src 'self' https://mc.yandex.ru;")
+ ht=ht.replace("img-src 'self' data:;", "img-src 'self' data: https://mc.yandex.ru;")
+ ht=ht.replace("connect-src 'self';", "connect-src 'self' https://mc.yandex.ru;")
 (out/'.htaccess').write_text(ht,encoding='utf-8',newline='\n')
 print(json.dumps({'pages':len(paths)+1,'files':sum(p.is_file() for p in out.rglob('*')),'mode':'direct-contact','https_redirect':args.https}))
