@@ -14,21 +14,23 @@ $('.lightbox-close')?.addEventListener('click',()=>lightbox.close());
 lightbox?.addEventListener('click',e=>{if(e.target===lightbox)lightbox.close()});
 lightbox?.addEventListener('close',()=>trigger?.focus());
 const store={get(key){try{return localStorage.getItem(key)}catch{return null}},set(key,value){try{localStorage.setItem(key,value)}catch{}}};
+const analyticsKey='os-analytics-v20261028';
+function analyticsChoice(){try{const choice=JSON.parse(store.get(analyticsKey)||'null');return choice&&choice.version==='2026-10-28'&&Number.isFinite(choice.at)&&Date.now()-choice.at>=0&&Date.now()-choice.at<180*86400000&&['yes','no'].includes(choice.value)?choice.value:null}catch{return null}}
 const tags=['utm_source','utm_medium','utm_campaign','utm_content','utm_term','yclid'];
 let attribution={};
 try{const saved=JSON.parse(sessionStorage.getItem('os-attribution')||'{}');if(saved&&typeof saved==='object')attribution=saved}catch{}
 const params=new URLSearchParams(location.search);let fresh={};tags.forEach(k=>{if(params.has(k))fresh[k]=params.get(k).slice(0,200)});
 if(Object.keys(fresh).length){attribution=fresh;try{sessionStorage.setItem('os-attribution',JSON.stringify(fresh))}catch{}}
-function goal(name){if(config?.metrika&&store.get('os-analytics')==='yes'&&typeof window.ym==='function')window.ym(Number(config.metrika),'reachGoal',name)}
+function goal(name){if(config?.metrika&&analyticsChoice()==='yes'&&typeof window.ym==='function')window.ym(Number(config.metrika),'reachGoal',name)}
 function startAnalytics(){if(!config?.metrika||window.ym)return;window.ym=function(){(window.ym.a=window.ym.a||[]).push(arguments)};window.ym.l=Date.now();const s=document.createElement('script');s.async=true;s.src='https://mc.yandex.ru/metrika/tag.js?id='+config.metrika;document.head.appendChild(s);window.ym(Number(config.metrika),'init',{ssr:true,clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:config.webvisor===true,ecommerce:'dataLayer',referrer:document.referrer,url:location.href});}
-function setupAnalytics(c){if(!c.metrika)return;$$('[data-cookie-settings]').forEach(b=>b.hidden=false);const choice=store.get('os-analytics');if(choice==='yes')startAnalytics();else if(choice!=='no')$('.cookie-panel').hidden=false;}
-$$('[data-cookie]').forEach(b=>b.addEventListener('click',()=>{const old=store.get('os-analytics');store.set('os-analytics',b.dataset.cookie);$('.cookie-panel').hidden=true;if(b.dataset.cookie==='yes')startAnalytics();else if(old==='yes')location.reload()}));
+function setupAnalytics(c){if(!c.metrika)return;$$('[data-cookie-settings]').forEach(b=>b.hidden=false);const choice=analyticsChoice();if(choice==='yes')startAnalytics();else if(choice!=='no')$('.cookie-panel').hidden=false;}
+$$('[data-cookie]').forEach(b=>b.addEventListener('click',()=>{const old=analyticsChoice();store.set(analyticsKey,JSON.stringify({value:b.dataset.cookie,at:Date.now(),version:'2026-10-28'}));$('.cookie-panel').hidden=true;if(b.dataset.cookie==='yes')startAnalytics();else if(old==='yes')location.reload()}));
 $$('[data-cookie-settings]').forEach(b=>b.addEventListener('click',()=>{$('.cookie-panel').hidden=false;$('.cookie-panel button').focus()}));
 $$('a[href^="tel:"]').forEach(a=>a.addEventListener('click',()=>goal('phone_click')));
 $$('a[href^="mailto:"]').forEach(a=>a.addEventListener('click',()=>goal('email_click')));
 const mobile=$('.mobile-contact'),request=$('#request');
 if(request&&mobile){let inForm=false;const update=()=>mobile.classList.toggle('is-hidden',inForm||!!document.activeElement?.closest('input,textarea'));new IntersectionObserver(entries=>{inForm=entries[0].isIntersecting;update()},{threshold:.05}).observe(request);document.addEventListener('focusin',update);document.addEventListener('focusout',()=>setTimeout(update,100));}
-function clientId(){return new Promise(resolve=>{if(!config?.metrika||store.get('os-analytics')!=='yes'||!window.ym)return resolve('');let done=false;const finish=v=>{if(!done){done=true;resolve(v||'')}};setTimeout(()=>finish(''),600);window.ym(Number(config.metrika),'getClientID',finish)})}
+function clientId(){return new Promise(resolve=>{if(!config?.metrika||analyticsChoice()!=='yes'||!window.ym)return resolve('');let done=false;const finish=v=>{if(!done){done=true;resolve(v||'')}};setTimeout(()=>finish(''),600);window.ym(Number(config.metrika),'getClientID',finish)})}
 function fileData(file){return new Promise((resolve,reject)=>{const reader=new FileReader();reader.onload=()=>resolve({name:file.name,data:reader.result.split(',')[1]});reader.onerror=()=>reject(Error('Не удалось прочитать файл. Попробуйте приложить его снова.'));reader.readAsDataURL(file)})}
 $$('.lead-form').forEach(form=>{
  let started=false,id=crypto.randomUUID(),success=false;

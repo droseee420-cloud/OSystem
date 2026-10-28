@@ -3,6 +3,7 @@
 The normal Python application and local preview keep their forms unchanged.
 """
 import argparse,json,re,shutil
+from business import PRIVACY
 from pathlib import Path
 from xml.sax.saxutils import escape
 
@@ -15,7 +16,7 @@ parser.add_argument('--metrika-id',type=int,help='Public Yandex Metrika counter;
 args=parser.parse_args();out=args.output.resolve();origin=args.origin.rstrip('/')
 if not origin.startswith('https://'):raise SystemExit('Canonical origin must use HTTPS')
 out.mkdir(parents=True,exist_ok=True)
-excluded={'privacy','consent','spasibo'}
+excluded={'consent','spasibo'}
 contact='''<div class="direct-request"><p class="eyebrow">Прямая связь с менеджером</p><h3>Расскажите о вашей задаче</h3><p>Позвоните или отправьте письмо. Укажите, что нужно обогреть, город объекта и удобный способ связи.</p><a class="button" href="tel:+79301755000">Позвонить: +7 930 175 50 00</a><a class="button secondary" href="mailto:obogrevsistem@yandex.ru">Написать на почту</a><p class="form-direct"><a href="mailto:obogrevsistem@yandex.ru">obogrevsistem@yandex.ru</a></p><p class="fine">Фото, размеры и техническое задание можно приложить к письму. Если материалов пока нет — начнём с разговора.</p></div>'''
 for src in (ROOT/'public').rglob('*'):
  if not src.is_file():continue
@@ -25,14 +26,17 @@ for src in (ROOT/'public').rglob('*'):
  if src.suffix!='.html':shutil.copy2(src,dest);continue
  text=src.read_text(encoding='utf-8')
  text=text.replace('@@SITE_URL@@',origin).replace('@@ROBOTS@@','noindex,follow' if rel.parts[0]=='404' else 'index,follow')
+ if rel.parts[0]=='privacy':
+  text=re.sub(r'<article.*?</article>',lambda _:'<article class="wrap section legal narrow"><h1>Политика обработки персональных данных</h1>'+PRIVACY+'</article>',text,flags=re.S)
  text=re.sub(r'<form class="lead-form".*?</form>',lambda _:contact,text,flags=re.S)
  text=text.replace('Оставьте контакт и коротко опишите задачу. Менеджер уточнит детали и поможет определить следующий шаг.','Позвоните или напишите на почту. Менеджер уточнит детали объекта и поможет определить следующий шаг.')
  text=text.replace('Приложите к заявке — так разговор будет предметнее.','Пришлите на почту — так разговор будет предметнее.')
  text=text.replace('Позвоните, напишите на почту или оставьте заявку.','Позвоните или напишите на почту.')
- text=re.sub(r'<a href="/(?:privacy|consent)/"[^>]*>.*?</a>','',text)
+ text=re.sub(r'<a href="/consent/"[^>]*>.*?</a>','',text)
  if args.metrika_id:
+  text=text.replace('<a href="/privacy/">Подробнее</a>','<a href="/analytics-consent/">Согласие на аналитику</a> · <a href="/privacy/">Политика обработки данных</a>')
   text=text.replace('Аналитика помогает понять, какие разделы полезны. Разрешить Яндекс Метрику? ', 'Разрешить Яндекс Метрику и Вебвизор? Они используют cookie, собирают статистику посещений и записывают действия на страницах, чтобы улучшать сайт и рекламу. Выбор можно изменить в подвале сайта. ')
-  text=text.replace('/assets/site.js"','/assets/site.js?v=metrika-113826221-1"')
+  text=text.replace('/assets/site.js"','/assets/site.js?v=legal-20261028-1"')
  else:
   text=re.sub(r'<button class="link-button" data-cookie-settings hidden>.*?</button>','',text)
   text=re.sub(r'<div class="cookie-panel" hidden>.*?</div></div>','',text,flags=re.S)
